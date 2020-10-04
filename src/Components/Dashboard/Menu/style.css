@@ -1,0 +1,223 @@
+.cursos_ulm{
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+    align-self: stretch;
+    width: 100%;
+}
+.cursos_ulm i{
+    color: var(--color-text);
+    font-size: 20px;
+}
+.cursos_ulm  a{
+    color: var(--color-text);
+    font-size: 18px;
+}
+.cursos_ulm .logo_contentm a{
+    color:var(--color-text);
+    font-size: 30px;
+}
+.cursos_ulm .logo_contentm i{
+    color: var(--color-text);
+    font-size: 30px;
+}
+.cursos_ulm{
+    padding: 5px ;
+    align-items: center;
+    display: flex;
+    background: var(--bg-ul);
+    /* background: var(--bg-ul); */
+}
+.logo_contentm{
+    /* display: flex;
+    align-self: stretch;
+    justify-content: space-between;
+background: crimson;
+align-items: center; */
+    position: relative;
+    display: none;
+    margin-right: auto;
+}
+
+.logo_contentm{
+    position: relative;
+}
+.nav-listttm{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.nav-listttm  li{
+    line-height: 2rem;
+    position: relative;
+}
+.subs-menum li{
+    line-height: 2rem;
+}
+.nav-listttm a{
+    display: block;
+    padding: 0px 1.5rem;
+    transition: color 650ms ease-in-out;
+    /* font-size: 18px; */
+    text-transform: capitalize;
+    cursor: pointer;
+    color: var(--color-text);
+}
+/* .nav-listttm a:hover{
+    background: crimson;
+} */
+.subs-menum a{
+    transition: color 650ms ease-in-out;
+    /* font-size: 18px; */
+    padding: 0 1.5rem;
+    text-transform: capitalize;
+    cursor: pointer;
+    color: var(--bg);
+}
+.subs-menum a:hover{
+    background: #2b98f0;
+}
+.nav-listttm a i{
+    font-size: 18px;
+}
+
+/* .nav-listttm a:hover{
+    color: #2b98f0;
+} */
+.subs-menum{
+    width: 250px;
+    display: block;
+    background: var(--bg-pas);
+    border-top: 3px solid #2b98f0;
+    /* border-top-color: #2b98f0; */
+    z-index: 100;
+    opacity: 0; 
+    visibility: hidden;
+    transition: all 650ms ease,opacity 1s ease-in-out,visibility 1s ease-in-out;
+    top: 5rem;
+    position: absolute;
+}
+.subs-menum a{
+    display: block;
+    margin: 5px 0;
+}
+.nav-listttm a .a_menu{
+    color: var(--color-text);
+}
+.subs-menum a{
+    font-size: 15px;
+}
+ .subs-menum::before{
+    content: '';
+     position: absolute; 
+    top: -2.5rem;
+    left: 3rem;
+    border: 1.2rem solid transparent;
+    border-bottom-color: #2b98f0;
+} 
+
+.nav-listttm li:hover > .subs-menum{
+    top:4rem;
+    opacity: 1;
+    visibility: visible;
+}
+
+@media screen and (min-width:850px){
+    .nav-listttm a{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        align-self: stretch;
+        padding: 0px .9rem;
+    }
+    .nav-listttm a i{
+        justify-content: center;
+        margin: auto;
+        font-size: 24px;
+    }
+    .nav-listttm a .a_menu{
+        margin: 3px 0;
+        width: 100%;
+        font-size: 18px;
+    }
+    #extenmc{
+        width: 100%;
+        padding: 0px 5px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:850px){
+    .menu_dashboard{
+        width: 100%;
+    }
+    .cursos_ulm .logo_contentm{
+        padding: 10px 20px;
+        display: flex;
+        width: 100%;
+        align-self: stretch;
+        align-items: center;
+        /* background: #2b98f0; */
+        justify-content: space-between;
+    }
+    .cursos_ulm .logo_contentm i{
+        font-size: 30px;
+    }
+    .nav-listttm a{
+        display: flex;
+        align-items: center;
+    }
+    .nav-listttm a .a_menu{
+        margin-left: 7px;
+    }
+    .cursos_ulm{
+        display: flex;
+        align-self: stretch;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        flex: 1;
+        margin: 0px;
+        /* background: rgb(26, 23, 22); */
+    }
+    .nav-listttm{
+        display: flex;
+        align-items: left;
+        width: 100%;
+        top: 0;
+        left: 0;
+        flex-direction: column;
+        align-self: stretch;
+        z-index: 10000;
+        transition:display .5s ease-in-out;
+        display: none;
+        /* background: #2b98f0; */
+    }
+    .nav-listttm li{
+        line-height: 2rem;
+    }
+    .subs-menum{
+        width: 390px;
+        border: 3px solid transparent;
+        border-left-color: #2b98f0;
+        margin-left: 1rem;
+        position: initial;
+        max-height: 0;
+    }
+    .nav-listttm li:hover > .subs-menum{
+        opacity: 1;
+        visibility: visible;
+        max-height: initial;
+    }
+    .subs-menum::before{display: none;}
+    /* .nav-listttm{
+        display: none;
+        
+    } */
+    .contsama{
+        transition:  1s ease-in-out;
+        display: flex;
+    }
+}

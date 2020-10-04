@@ -1,0 +1,11 @@
+html{
+  --bg:#ffffff;
+  --bg-panel:#ccc;
+  --color-headings:#0077ff;
+  --color-text:#1b1a1a;
+  --bac-check:#092c3e;
+  --bg-ul:#b99783;
+  --bg-input:transparent;
+  --box-shadow:rgba(0,0,0,.9);
+  --bg-pas:#333;
+}

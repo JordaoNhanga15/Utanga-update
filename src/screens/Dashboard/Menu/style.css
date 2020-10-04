@@ -1,0 +1,72 @@
+.menu__{
+    margin: 0px 0 0 0;
+    padding: 0px 0 0 0;
+    display: grid;
+    box-sizing: border-box;
+    grid-gap: 4px;
+    justify-content: flex-start;
+    align-items: center;
+    grid-template-columns: 240px  999px;
+    grid-template-areas: 
+    "perfilll container_me"
+    ;
+    overflow: hidden;
+}
+.perfilll{
+    margin: 3px 3px;
+    /* margin: auto; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: stretch;
+    background: var(--bg-panel);
+    overflow: hidden;
+    grid-area: perfilll;
+}
+.container_mea{
+    overflow-x: hidden;
+    padding: 0px 0px;
+    margin: 0;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    grid-area: container_me;
+}
+@media screen and (max-width:850px){
+    .menu__{
+        display: flex;
+        flex-direction: column;
+        align-self: stretch;
+        justify-content: center;
+        padding: 0px 0px;
+        align-items: center;
+        margin: 0 0 0 0 ;
+    }
+    .container_mea{
+        /* width: 100vh; */
+        display: flex;
+        height: 100vh;
+        align-self: stretch;
+        align-items: flex-start;
+        padding: 0px 0px;
+        overflow-y: scroll;
+        /* background: yellow; */
+    }
+    .Menu_sa{
+        display: flex;
+        margin: 0px;
+        width: 100%;
+        align-self: stretch;
+        justify-content: flex-start;
+        align-items: flex-start;
+        /* background: violet; */
+    }
+    .Menu_da{
+        display: flex;
+        align-self: stretch;
+    }
+    .perfilll{
+        display: none;
+    }
+}

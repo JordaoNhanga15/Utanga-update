@@ -1,0 +1,112 @@
+.container_nav{
+    display: flex;
+    height: 70vh;
+    flex-direction: column;
+    background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)), url('../../../assets/Img/nature1.jpg') ;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    background-size: cover;
+    padding: 10px 20px;
+}
+.menuu{display: none;}
+
+/*menu */
+
+/**/
+
+.banner_cursos{
+    position: relative;
+    flex: 2;
+    margin: 0px 0;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: chartreuse; */
+}
+.banner_cursos #banner-boxx{
+    color:#f5f5f5 ;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 30px;
+    margin: 3px;
+}
+.banner_cursos #banner-titlee{
+    margin: 5px;
+    font-size: 25px;
+    text-transform: capitalize;
+}
+.banner_cursos .buttons{
+    display: flex;
+    align-self: stretch;
+    justify-content: center;
+    align-items: center;
+    /* background: chartreuse; */
+}
+.banner_cursos .buttons a{
+    margin: 10px ;
+    padding: 10px 10px;
+    font-size: 20px;
+    transition: background 1s ease,color 1s ease,border 1s ease-in-out;
+}
+.banner_cursos .buttons a:nth-child(1){
+    background: #2b98f0;
+}
+.banner_cursos .buttons a:nth-child(1):hover{
+    background: transparent;
+    border: 2px solid #f5f5f5;
+}
+.banner_cursos .buttons a:nth-child(2){
+    border: 2px solid #2b98f0;
+}
+.banner_cursos .buttons a:nth-child(2):hover{
+    background: #2b98f0;
+    border: 2px solid #f5f5f5;
+}
+
+@media screen and (max-width:850px){
+    .banner_cursos #banner-boxx{
+        font-size: 21px;
+        margin: 5px;
+    }
+    .banner_cursos #banner-titlee{
+        font-size: 18px;
+        text-align: center;
+    }
+    .banner_cursos .buttons a{
+        font-size: 15px;
+    }
+     .container_nav{
+         /* overflow-X: scroll;  */
+        height:70vh;
+        transition: height 2s ease-in;
+    }
+    .banner_cursos{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* background: #2b98f0; */
+    }
+    
+    /*.container_nav::-webkit-scrollbar{
+        width: 3px;
+    } */
+    .container_nav .cursos_ul{
+        flex-direction: column;
+    }
+    .container_nav .cursos_ul .logo_content{
+        color: white;
+        padding: 10px 10px;
+        width: 100%;
+        display: flex;
+        align-self: stretch;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .banner_cursos .buttons a{
+        margin: 5px ;
+    }
+    .menuu{display: block;}
+}

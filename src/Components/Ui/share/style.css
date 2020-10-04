@@ -1,0 +1,42 @@
+.share_container{
+    /* background: rgb(3, 169, 244) ; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0,2px,4px, rgba(0,0,0,.5);
+    padding: 10px 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+}
+.share_container h2{
+    color: #333;
+}
+.f_container{
+    display: flex;
+    justify-content: center;
+}
+.f{
+    display: flex;
+    align-items: center;
+    margin: 0px 5px;
+}
+.f a{
+    padding: 2px 4px;
+    color: black;
+    
+}
+.fs i{
+    transition: transform 1s ease-in-out,background 1s ease-in ;
+    display: flex;
+    justify-content: center;
+    padding: 7px 10px;
+    border-radius: 25px;
+    font-size: 20px;
+    color: black;
+}
+.fs i:hover{
+    transform: rotateY(360deg);
+    background: #333;
+    color: #fff;
+}

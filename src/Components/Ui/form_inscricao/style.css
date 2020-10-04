@@ -1,0 +1,152 @@
+.container_form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 320vh;
+    background: #ebeff2;
+}
+.container_textBox{
+    flex: 1;
+    justify-content: center;
+    max-width: 850px;
+    /* background: tomato; */
+    margin: auto  ;
+    align-self: stretch;
+}
+
+.textBox{
+    background: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 15px 0;
+    /* background: yellow; */
+}
+.textBox h2{
+    color: black;
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+
+.work{
+    padding: 10px 5px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    justify-content: flex-start;
+}
+.work h3{
+    display: flex;
+    align-self: stretch;
+    color: black;
+}
+.grid_{
+    margin: 5px 0;
+    padding: 10px 0;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+    align-self: stretch;
+}
+.grid_ input::placeholder{color: #949090;}
+.grid_ select{color: black;}
+.grid_ h3{
+    background: blanchedalmond;
+    margin: 2px;
+    font-size: 11px;
+    padding: 0px 0px;
+    color: black;
+}
+.grid_ h3 small{
+    background: blanchedalmond;
+    font-weight: bold;
+    font-size: 13px;
+    color: black;
+}
+#grid_22{
+    grid-template-columns: 250px 1fr;
+    /* background: tomato; */
+}
+#docss{
+    /* background: cornflowerblue; */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.input_conta{
+    flex: 1;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+}
+#name_grid{
+    grid-template-columns: 1fr;
+}
+.input_conta div{
+    line-height: 2;
+    padding: 4px 4px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    align-self: stretch;
+}
+.input_conta i{
+    font-size: 19px;
+    color: black;
+    padding: 5px 10px;
+    background: #ccc;
+}
+.input_conta input{
+    line-height: 2;
+    flex: 1;
+    border: none;
+    background: #fff;
+    color: black;
+    border: 1px solid #ccc;
+    /* padding-left: 10px; */
+}
+.input_conta select{
+    border: 1px solid #ccc;
+    height: 27px;
+    /* padding: 0px 10px; */
+    flex: 1;
+    /* border: none; */
+    background: white;
+}
+
+@media screen and (min-width:850px){
+
+.container_textBox{
+    /* justify-content: flex-start; */
+    margin: auto;
+    /* background: chartreuse; */
+}
+
+}
+
+@media screen and (max-width:850px){
+    .container_textBox{
+        max-width: 410px;
+        margin: 5px  0;
+        overflow: hidden;
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; */
+        /* background: tomato; */
+    }
+    .work{
+        margin: 5px 0;
+    }
+    .grid_{
+        /* max-width: 300px; */
+        grid-template-columns: 1fr;
+        grid-gap: 15px;
+    }
+    #docss{
+        grid-template-columns: 1fr;
+    }
+}

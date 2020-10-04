@@ -1,0 +1,121 @@
+.nav-list{
+    margin: 80px 0;
+    color: #333;
+}
+.nav-list li a{color: #333;}
+.menu{
+    width: 100vh;
+    padding: 0px 0px;
+    height: 100vh;
+}
+.nav-list{
+    display: flex;
+    width: 120vh;
+    align-items: center;
+}
+.nav-list > li{
+    line-height: 1rem;
+    position: relative;
+}
+.nav-list  li{
+    line-height: 1rem;
+    position: relative;
+}
+.sub-menu  li{
+    line-height: 4rem;
+}
+.sub-menu  li a{
+    color: white;
+}
+.sub-menu  li a i{
+    color: white;
+}
+.nav-list i{color: #333;}
+.nav-list a{
+    display: block;
+    color: white;
+    padding: 0px 1rem;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    transition: color 650ms ease-in;
+}
+.nav-list a:hover{
+    color: #eb3007;
+}
+/* .sub-menu li a{
+    
+} */
+.sub-menu  {
+    display: block;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    width: 100%;
+    border-top: 3px solid #eb3007;
+    background: #191919;
+    z-index: 100;
+    top: 16rem;
+    transition: all 650ms ease;
+}
+.sub-menu::before{
+    content: '';
+    position: absolute;
+    top: -2.5rem;
+    left: 3px;
+    border: 1.2rem solid transparent;
+    border-bottom-color: #eb3007;
+}
+.sub-menu .sub-menu::before{
+    top: .9rem;
+    left: -2.5rem;
+    border: 1.2rem solid transparent;
+    border-right-color: #eb3007;
+}
+.sub-menu .sub-menu{
+    border-top: none;
+    border-left:3px solid #eb3007 ;
+    top: 0;
+    left: 160%;
+}
+.nav-list li:hover > .sub-menu{
+    top: 8rem;
+    opacity: 1;
+    visibility: visible;
+}
+.sub-menu li:hover > .sub-menu{
+    left: 100%;
+    top: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+@media screen and (min-width:850px){
+    /* .menu{
+        padding: 10px 20px;
+        height: 200vh;
+    } */
+    .nav-list{
+        /* position: fixed; */
+        align-items: initial;
+        top: 0;
+        left: 0;
+        flex-direction: column;
+        z-index: 1000
+    }
+    .nav-list > li{
+        line-height: 3rem;
+    }
+    .sub-menu{
+        position: initial;
+        border: 3px solid transparent;
+        border-left-color: #eb3007;
+        margin-left: 1rem;
+        max-height: 0;
+    }
+    .sub-menu::before{display: none;}
+    .nav-list li:hover > .sub-menu{
+        opacity: 1;
+        visibility: visible;
+        max-height: initial;
+    }
+}

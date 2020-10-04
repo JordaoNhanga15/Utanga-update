@@ -1,0 +1,98 @@
+@media screen and (min-width:1200px){
+    .Portal{
+        display: grid;
+        /* grid-template-columns: 800px 410px; */
+        grid-template-columns: 1fr;
+        grid-gap: 0px;
+        transition: display 1s ease-in,grid-template-columns 1s ease,all 1s ease-in;
+        grid-template-areas: 
+        "protal_a protal_b"
+        ;
+    }
+    .protal_a{
+        animation: portal_b 1s ease-in  step-end ;
+        grid-area: protal_a;
+    }
+    .protal_b{
+        animation: portal 1s ease-out   forwards ;
+        overflow: hidden;
+        /* display: none; */
+        grid-area: protal_b;
+    }
+}
+@media screen and (max-width:900px){
+    .Portal{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 3px;
+        grid-template-areas: 
+        "protal_a protal_b"
+        ;
+    }
+    .protal_a{
+        grid-area: protal_a;
+    }
+    .protal_b{
+        display: none;
+        grid-area: protal_b;
+    }
+}
+.Portal{
+    overflow-x: hidden;
+}
+.Portal::-webkit-scrollbar{
+    width: 0;
+}
+.protal_b{
+    animation: portal 1.5s ease-out   forwards ;
+    overflow: hidden;
+    display: none;
+    grid-area: protal_b;
+}
+.protal_a{
+    /* animation: portal__a 2s ease-in   ; */
+    grid-area: protal_a;
+}
+
+@keyframes portal{
+    from{
+        opacity: .7;
+        transform: translateX(50%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+@keyframes portal1{
+    from{
+        opacity: .7;
+        transform: translateX(0%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(100%);
+    }
+}
+
+
+@keyframes portal__a{
+    from{
+        opacity: 1;
+        width: 120%;
+    }
+    to{
+        opacity: .5;
+        width: 100%;
+    }
+}
+@keyframes portal__a1{
+    from{
+        opacity: .5;
+        width: 80%;
+    }
+    to{
+        opacity: 1;
+        width: 100%;
+    }
+}

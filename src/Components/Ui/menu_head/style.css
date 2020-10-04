@@ -1,0 +1,141 @@
+.cursos_ul{
+    margin: 10px 0;
+    padding: 10px 10px;
+}
+.cursos_ul i{
+    color: white;
+    font-size: 30px;
+}
+.cursos_ul  a{
+    color: white;
+    font-size: 18px;
+}
+.cursos_ul .logo_content a{
+    color: white;
+    font-size: 30px;
+}
+.cursos_ul{
+    padding: 5px ;
+    align-items: center;
+    display: flex;
+}
+.logo_content{
+    position: relative;
+    margin-right: auto;
+}
+
+.logo_content{
+    position: relative;
+}
+.nav-listtt{
+    position: relative;
+    display: flex;
+}
+.nav-listtt  li{
+    line-height: 2rem;
+    position: relative;
+}
+.subs-menu li{
+    line-height: 2rem;
+}
+.nav-listtt a{
+    display: block;
+    transition: color 650ms ease-in-out;
+    font-size: 1.4rem;
+    padding: 0 1.5rem;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.nav-listtt a i{
+    font-size: 16px;
+}
+.nav-listtt a:hover{
+    color: #2b98f0;
+}
+.subs-menu{
+    width: 450px;
+    display: block;
+    background: #333;
+    border-top: 3px solid #2b98f0;
+    /* border-top-color: #2b98f0; */
+    z-index: 100;
+    opacity: 0; 
+    visibility: hidden;
+    transition: all 650ms ease,opacity 1s ease-in-out,visibility 1s ease-in-out;
+    top: 5rem;
+    position: absolute;
+}
+.subs-menu a{
+    margin: 5px 0;
+}
+#inve{
+    width: 15rem;
+}
+#exten{
+    width: 15rem;
+}
+
+/* f */
+
+.subs-menu a{
+    font-size: 17px;
+}
+ .subs-menu::before{
+    content: '';
+     position: absolute; 
+    top: -2.5rem;
+    left: 3rem;
+    border: 1.2rem solid transparent;
+    border-bottom-color: #2b98f0;
+} 
+
+.nav-listtt li:hover > .subs-menu{
+    top:3rem;
+    opacity: 1;
+    visibility: visible;
+}
+
+@media screen and (max-width:850px){
+    .cursos_ul{
+        display: flex;
+        flex-direction: column;
+        margin: 0 0;
+        padding: 0 0;
+        /* background: yellow; */
+    }
+    .nav-listtt{
+        /* position: fixed; */
+        /* background: lawngreen; */
+        align-items: left;
+        width: 100%;
+        top: 0;
+        left: 0;
+        /* height: 100vh; */
+        flex-direction: column;
+        z-index: 10000;
+        /* background: #2b98f0; */
+    }
+    .nav-listtt li{
+        line-height: 2rem;
+    }
+    .subs-menu{
+        width: 390px;
+        border: 3px solid transparent;
+        border-left-color: #2b98f0;
+        margin-left: 1rem;
+        position: initial;
+        max-height: 0;
+    }
+    .nav-listtt li:hover > .subs-menu{
+        opacity: 1;
+        visibility: visible;
+        max-height: initial;
+    }
+    .subs-menu::before{display: none;}
+    .nav-listtt{
+        display: none;
+    }
+    .contsa{
+        display: block;
+    }
+}

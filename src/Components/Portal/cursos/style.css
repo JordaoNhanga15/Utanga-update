@@ -1,0 +1,175 @@
+.tab-content{
+    background:#fff;
+    padding: 10px 10px;
+    margin: 10px 0px;
+}
+.tab-content section{
+    animation: up_tab 1s ease-in-out   forwards;
+    margin: 5px;
+}
+.tab-content section h1{
+    margin: 20px 0;
+    color: black;
+    font-weight: bold;
+}
+.img-infoCur img{
+    width: 100%;
+    height: 400px;
+}
+
+.info-curso{
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    max-width: 900px;
+    grid-gap: 10px;
+    margin: 0 auto;
+}
+.micro-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* .micro-info > div{
+    margin: 50px 0; 
+    flex: 1 1 auto; 
+    align-self: stretch; 
+    background: #333;
+    padding: 0px 3px;
+} */
+.micro-info > div{
+    background: #333;
+    flex: 1 1 auto;
+    align-self: stretch;
+    margin: 50px 0; 
+    padding: 0 2px;
+}
+.micro-info h3{
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding: 10px 0px;
+}
+.micro-info h3 i{
+    font-size: 17px;
+    color:  #2b98f0;
+    font-weight: normal;
+}
+.micro-info h3 small{
+    font-weight: normal;
+    color: white;
+}
+.infor-curso{
+    margin: 25px 0;
+    padding: 10px 10px;
+}
+.infor-curso h2{
+    padding: 0px 20px;
+    margin: 10px 0;
+    color: black;
+}
+.infor-curso p{
+    color: black;
+    margin: 10px 0;
+    padding: 5px 30px;
+}
+.infor-mini{
+    padding: 10px 5px;
+    margin: 5px 0;
+}
+.infor-mini h3{
+    font-weight: bold;
+    color: black;
+    margin: 10px 0;
+}
+.infor-mini h3 small{
+    font-style: italic;
+    font-weight: normal;
+    color: black;
+}
+.infor-mini ul{
+    padding: 10px 20px;
+}
+.infor-mini ul li{
+    margin: 10px 0;
+    color: black;
+}
+.btnnnn{
+    margin: 10px 0;
+    display: grid;
+    justify-content: flex-start;
+    align-items: center;
+}
+.btnnnn a{
+    background: #2b98f0;
+    padding: 15px 10px;
+    color: white;
+    transition: background 1s ease,color 1s ease-in-out;
+}
+.btnnnn a:hover{
+    background: #333;
+}
+
+@media screen and (max-width:850px){
+    .info-curso{
+        grid-template-columns: 1fr;
+    }
+    .micro-info{
+        justify-content: flex-start;
+        display: flex;
+        flex-direction: row;
+        overflow-X: scroll;
+    }
+    .micro-info > div{
+        align-items: center;
+        /* background: #2b98f0; */
+        flex: 1  0 200px;
+        margin: 0 10px ;
+    }
+    .micro-info::-webkit-scrollbar{
+        height: 8px;
+    }
+    .micro-info::-webkit-scrollbar-track{
+        background: #fff;
+    }
+    .micro-info::-webkit-scrollbar-thumb{
+        background: #333;
+        border-radius: 10px;
+    }
+
+}
+/* @media screen and (min-width:900px){
+.info-curso{
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    max-width: 900px;
+    grid-gap: 10px;
+    margin: 0 auto;
+}
+.micro-info{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+} */
+*::-webkit-scrollbar{
+    width: 0.6rem;
+}
+*::-webkit-scrollbar-track{
+    background: #333;
+}
+*::-webkit-scrollbar-thumb{
+    background: linear-gradient(to top,#909fad,#094e86);
+    border-radius: 10px;
+}
+
+@keyframes up_tab{
+    from{
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}

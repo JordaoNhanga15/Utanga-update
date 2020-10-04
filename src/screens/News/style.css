@@ -1,0 +1,128 @@
+.News_container{
+    /* background: tomato; */
+    display: flex;
+    /* justify-content: space-between; */
+    flex-direction: column;
+    height: 100vh;
+}
+.imgBac_newse{
+    flex: 4;
+    min-height: 350px;
+    display: flex;
+    padding: 20px 40px;
+    background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)),url('../../assets/Img/abert-111-jpg.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+.info_news h3 small{
+    color: #fff;
+}
+.date_news h1 small{
+    color: #fff;
+}
+.date_news{
+    text-align: center;
+    margin: 0px 20px;
+}
+.div_newse{
+    flex: 2;
+    min-height: 200px;
+    /* height: 50vh; */
+    /* background: chartreuse; */
+    justify-content: center;
+    align-items: center;
+}
+.text_infose{
+    flex: 1;
+    height: 100%;
+    padding: 10px 20px;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+}
+.text_infose h1{
+    font-size: 25px;
+    color: #333;
+}
+.text_infose p{
+    /* text-align: center; */
+    text-transform: capitalize;
+    color: #333;
+}
+.another{
+    /* box-shadow: 2px 2px 4px rgba(0,0,0,.9); */
+    /* background-color: rosybrown; */
+    border: 1px solid transparent;
+    border-top-color: #333;
+    border-bottom-color: #333;
+    margin: 40px 0px 30px;
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.another a{
+    /* background: rgb(24, 185, 230); */
+    color: #333;
+    transition: background 1s ease;
+    border-radius: 25px;
+    padding: 15px 15px;
+}
+.another a i{
+    color: #333;
+}
+.another a:hover{
+    box-shadow: 0px 2px 4px rgba(0,0,0,.3);
+    background: rgb(24, 185, 230);
+}
+@media screen and (min-width:850px){
+    .div_newse{
+        display: grid;
+        grid-template-columns: 300px 900px;
+        grid-template-rows: 200px 200px;
+        grid-template-areas: 
+        "div_news_1as text_infos"
+        ;
+    }
+    .div_news_1as{
+        box-shadow: 0px 2px 5px rgba(0,0,0,4);
+        background: #ccc;
+        grid-area: div_news_1as;
+    }
+    .text_infose{
+        grid-area: text_infos;
+    }
+}
+@media screen and (max-width:850px){
+    .div_newse{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 10px;
+        grid-gap: 10px;
+    }
+    .imgBac_new{
+        min-height: 200px;
+    }
+    .div_news_1as{
+        box-shadow: 0px 2px 5px rgba(0,0,0,4);
+        background: #ccc;
+        margin: 10px 0 50px;
+    }
+    .another{
+        margin: 150px 0 50px;
+        padding: 10px 20px;
+    }
+    .text_infose h1{
+        margin: 20px 0;
+    }
+    .date_news{
+        display: none;
+    }
+    .imgBac_news{
+        padding: 10px 10px;
+    }
+}

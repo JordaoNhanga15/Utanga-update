@@ -1,0 +1,24 @@
+.contact{
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        background:#333;
+        justify-content: space-between;
+}
+.f_container{
+    display: flex;
+}
+.f{
+    display: flex;
+    align-items: center;
+    margin: 0px 5px;
+}
+.f a{
+    padding: 2px 4px;
+    color: #9f9f9f;
+}
+@media screen and (max-width:900px){
+    .contact{
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+li{list-style: none;}
+a{text-decoration: none;}
+header{
+    display: flex;
+    flex-direction: column;
+    background:linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),
+     url('../../../assets/Img/banner-img.jpeg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 85vh;
+    padding: 20px 50px;
+}
+.start{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0 20px;
+}
+.start .a_utanga{
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.start .start_b{
+    display: flex;
+}
+.start .start_b{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.start .start_b .acesso{
+    display: flex;
+    align-items: center;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.start .start_b .acesso i{
+    font-size: 25px;
+    margin-left: 7px;
+}
+.start .start_b #menu_icon{
+    font-size: 25px;
+    margin-left: 20px;
+}
+/* ul para quem vai fazer o login*/
+.start .start_b .li_start_b ul{
+    padding: 0px 5px;
+    position: absolute;
+    left: 0;
+    background: #111;
+    display: none;
+}
+.start .start_b .li_start_b:hover ul{
+    display: block;
+}
+.start .start_b .li_start_b ul li {
+    display: block;
+    padding: 5px 0;
+    text-align: center;
+    width: 200px;
+}
+.start .start_b .li_start_b ul li a{
+    padding: 10px 0px;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.start .start_b .li_start_b ul li:hover a{
+    transition: 1s background, .5s ease color;
+    background: #333;
+    color: white;
+}
+
+/* .span_a_li_start{display: none;} */
+
+/* banner */
+.center{
+    /* background: rgb(255, 0, 0); */
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+.center #banner-title{
+    text-transform:capitalize;
+    font-size: 30px;
+}
+.center .banner-underline{
+    width: 200px;
+    margin: 10px auto;
+    border: 3px solid #2b98f0;
+}
+.center .banner-subtitle{
+    margin: 20px 0 20px 0;
+    /* text-transform: capitalize; */
+    font-size: 25px;
+    text-align: center;
+} 
+.center a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border: 3px solid #2b98f0;
+    font-size: 30px;
+    background: #2b98f0;
+    transition: background 3s ease, border .5s ease-in-out;
+}
+.center a:hover{
+    border:3px solid #f5f5f5;
+    background: transparent;
+}
+/* .end{
+    top: 83%;
+    z-index: 1;
+    position: absolute;
+    left: calc(50% - 349px);
+    background: #333;
+}
+.end ul{
+    box-shadow: 0px 3px 5px rgba(0,0,0,.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px 0px 0px;
+}
+.end ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 0px;
+}
+.end ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 10px 10px;
+    align-self: stretch;
+    transition: background 3s ease;
+    border-radius: 9px;
+}
+.end ul li a:hover{
+    background: chocolate;
+}
+.end ul li i{
+    margin-right: 9px;
+    font-size: 30px;
+}
+.end ul li .end_a{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 10px 10px;
+} */
+
+@media screen and (max-width:850px){
+    header{
+        padding: 10px 15px;
+    }
+    .center .banner-subtitle{
+        margin-bottom: 20px;
+        font-size: 27px;
+    }
+    .end{
+        top: 83.5%;
+        z-index: 1;
+        position: absolute;
+        left: calc(50% - 212px);
+        background: #333;
+        padding: 0 0 0 0;
+    }
+    .end ul{
+        padding: 0 0 0 0;
+    }
+    .end ul li .end_a{
+        padding: 0 0 0 0;
+    }
+    .end ul li .end_a h5{
+        display: none;
+    }
+    .end ul li a{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    /* .start .start_b .span_a_li_start{display: none;} */
+    .start .start_b{
+        margin-right: 10px ;
+    }
+    /* .span_a_li_start{display: none;} */
+}
